@@ -1,0 +1,238 @@
+.menu{
+    background-color:beige;
+}
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.divPageTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.titleText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 3opx;
+}
+
+.foodsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.line {
+    margin-top: 15px;
+    width: 30%;
+    border: 1px solid #333;
+    background-color: #333;
+}
+
+.product img {
+    height: 300px;
+    width: 300px;
+}
+
+.product {
+    margin: 30px;
+    background-color: #FFFACD;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    padding-top: 10px;
+    border-radius: 3px;
+}
+
+.orderBtn {
+    cursor: pointer;
+    border-radius: 3px;
+    height: 30px;
+    width: 100px;
+    position: relative;
+    top: -10px;
+    border: 0px;
+    background-color: #FADADD;
+    color: #333333;
+}
+
+#myOrders {
+    resize: none;
+    margin-top: 10px;
+    padding: 12px 20px;
+    background-color:#FFFACD;
+    color: black;
+    font-size: 16px;
+    border-radius: 4px;
+    border-color:#FFFACD;
+}
+
+.menu_form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26.4px;
+}
+
+#userInfo>.flexColumn>label {
+    margin: 10px;
+}
+
+#userInfo>.flexColumn>input {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.order {
+    margin: 10px;
+}
+
+.order p {
+    margin-bottom: 10px;
+}
+
+.order input[type='radio'] {
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+#placeOrderBtn {
+    margin-top: 10px;
+    padding: 10px;
+}
+
+#forma {
+    box-shadow: 0px 0px 35px rgba(88, 33, 33, 0.2);
+    border: 2px solid #C1E1C1;
+    background-color: #B0E0E6; 
+    padding: 20px;
+    border-radius: 10px
+}
+
+#userInfo input[type='text'] {
+    border: none;
+    background: #FFFACD;
+    outline: none;
+    font-size: 20px;
+    height: 30px;
+    padding: 5px; 
+    border-radius: 5px; 
+}
+
+.buttons_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+@media(max-width:500px) {
+
+    #userInfo>.flexColumn>label {
+        margin: 20px;
+    }
+
+    #userInfo>.flexColumn>input {
+        margin-bottom: 40px;
+        margin-top: 20px;
+        margin-left: 50px;
+    }
+
+    .menu_form {
+        font-size: 8px;
+    }
+
+    #userInfo input[type='text'] {
+        font-size: 8px;
+        height: 10px;
+        width: 20em;
+    }
+
+    .commonBtn {
+        font-size: 8px;
+        border-radius: 3px;
+    }
+
+    #myOrders {
+        font-size: 8px;
+        width: 30em;
+        height: 30em;
+    }
+}
+
+
+@media(min-width:501px) and (max-width:800px){
+
+    #userInfo>.flexColumn>label {
+        margin: 20px;  
+    }
+    
+    #userInfo>.flexColumn>input {
+        margin-bottom: 40px;
+        margin-top: 20px;
+        margin-left: 50px;
+    }
+
+
+    .menu_form {
+        font-size: 8px;
+    }
+
+    #userInfo input[type='text'] {
+        font-size: 8px;
+        height: 10px;
+    }
+
+    .commonBtn {
+        font-size: 8px;
+        border-radius: 3px;
+    }
+
+    #myOrders {   
+        font-size: 8px;
+        width: 50em;
+        height: 30em;           
+    }
+}
+
+@media(min-width:801px) and (max-width:1000px) {
+    .menu_form {
+        font-size: 12x;
+    }
+
+    #userInfo input[type='text'] {
+        font-size: 12px; 
+    }
+
+    .commonBtn {
+        font-size: 12px;
+        border-radius: 3px;
+    }
+
+    #myOrders {
+        font-size: 12px;
+        width: 55em;
+        height: 30em;
+    }
+}

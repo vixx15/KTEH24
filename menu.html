@@ -1,11 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
+    <link rel="stylesheet" type="text/css" href="css/styleMenu.css">
+    <link rel="stylesheet" type="text/css" href="css/styleIndex.css">
+    <link rel="stylesheet" type="text/css" href="css/styleFooter.css">
 </head>
+
 <body>
+    <div class="menu">
+        <div class="divPageTitle">
+            <span class="accentText">MENI</span>
+            <hr class="line">
+        </div>
+        <div class="flexColumn">
+            <div class="titleText">
+                <h1>SELECT PRODUCTS</h1>
+            </div>
+            <div class="foodsContainer">
+                <div class="product">
+                    <h1>Cheesecake</h1>
+                    <p>200RSD</p>
+                    <img src="img/cheesecake.png" alt="Cheesecake">
+                    <p id="cheesecake">
+                        <button class="orderBtn">Order</button>
+                    </p>
+
+                </div>
+                <div class="product">
+                    <h1>Blueberry Muffin</h1>
+                    <p class="cena">200RSD</p>
+                    <img src="img/muffin.png" alt="Blueberry Muffins">
+                    <p id="muffin"><button class="orderBtn">Order</button></p>
+
+                </div>
+                <div class="product">
+                    <h1>Croissants</h1>
+                    <p class="cena">200RSD</p>
+                    <img src="img/croissant.jpg" alt="Croissants">
+                    <p id="Croissant">
+                        <button class="orderBtn">Order</button>
+                    </p>
+                </div>
+                <div class="product">
+                    <h1>Lavacake</h1>
+                    <p class="cena">1000RSD</p>
+                    <img src="img/lavacake.png" alt="Lavacake">
+                    <p id="lavacake">
+                        <button class="orderBtn">Order</button>
+                    </p>
+                </div>
+                <div class="product">
+                    <h1>Ice cream</h1>
+                    <p class="cena">1300RSD</p>
+                    <img src="img/icecream.png" alt="Ice cream">
+                    <p id="ice_cream">
+                        <button class="orderBtn">Order</button>
+                    </p>
+
+                </div>
+                <div class="product">
+                    <h1>Lemonade</h1>
+                    <p class="cena">200RSD</p>
+                    <img src="img/lemonade.png" alt="Lemonade">
+                    <p id="lemonade">
+                        <button class="orderBtn">Order</button>
+                    </p>
+
+                </div>
+                <div class="product">
+                    <h1>Baklava</h1>
+                    <p class="cena">299RSD</p>
+                    <img src="img/baklava.png" alt="Baklava">
+                    <p id="baklava">
+                        <button class="orderBtn">Order</button>
+                    </p>
+                </div>
+                <div class="product">
+                    <h1>Capuccino</h1>
+                    <p class="cena">459RSD</p>
+                    <img src="img/cappucino.png" alt="Capuccino">
+                    <p id="Cappucino">
+                        <button class="orderBtn">Order</button>
+                    </p>
+                </div>
+            </div>
+            <div class="menu_form">
+                <form action="index.html" id="forma">
+                    <div id="userInfo" class="flex-row">
+                        <div class="flexColumn">
+                            <label for="ime_prezime">Full name</label>
+                            <label for="kontakt">Contact</label>
+                        </div>
+                        <div class="flexColumn">
+                            <input type="text" id="ime_prezime" size="50px" maxlength="30">
+                            <input type="text" id="kontakt" size="50px" maxlength="20">
+                        </div>
+                    </div>
     
+                    <div class="order">
+                        <p>Payement type:</p>
+                        <input type="radio" name="placanje" id="kreditna">Credit card
+                        <input type="radio" name="placanje" id="rate">Cash
+                        <br>
+                        <textarea name="" id="myOrders" cols="100" rows="20"
+                            placeholder="Your Orders List"></textarea>
+                        <br>
+                        <p id="parRacun">Your bill: </p>
+                        <div class="buttons_container">
+                            <button id="placeOrderBtn" class="commonBtn">Place an order</button>
+                            <button id="deleteBtn" type="button" class="commonBtn">Delete order</button>
+                    </div>
+                    </div>
+                </form>
+            </div>
+            <div class="footer">
+                <div class="data mail">Email: <br> mail@gmail.com</div>
+                <div><a href="index.html"><img id="image" src="img/logo.png" alt="logo" class=""></a></div>
+                <div class="data">Kontakt: <br> 011-21316-82</div>
+                <div class="data">Adresa: <br> Bulevar Kralja Aleksandra 112, Beograd</div>
+                <div class="data">Radno vreme: <br> 08:00-22:00</div>
+            </div>
+        </div>
 </body>
+
 </html>

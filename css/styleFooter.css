@@ -1,0 +1,26 @@
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+.footer .data {
+    justify-self: center;
+    align-self: center;
+}
+
+
+.footer #image {
+    width: 80px;
+    height: 80px;
+}
+
+@media (max-width:800px) {
+    .footer {
+        font-size: 8px;
+    }
+}

@@ -19,6 +19,13 @@
     margin-bottom: 15px;
 }
 
+.descriptionText {
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
 .bigImages {
     padding-left: 20px;
     max-height: 600px;
@@ -55,12 +62,7 @@
     max-width: 800px; 
 }
 
-.descriptionText {
-    font-weight: 400;
-    line-height: 20px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
+
 
 .divBtnHome{
     width:100%;
