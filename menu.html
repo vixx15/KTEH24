@@ -8,9 +8,27 @@
     <link rel="stylesheet" type="text/css" href="css/styleMenu.css">
     <link rel="stylesheet" type="text/css" href="css/styleIndex.css">
     <link rel="stylesheet" type="text/css" href="css/styleFooter.css">
+    <link rel="stylesheet" type="text/css" href="css/styleNavBar.css">
 </head>
 
 <body>
+    <div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="index.html"><img src="img/logo.png" alt="logo" class=""></a></li>
+                <img id="burger-menu" src="img/burger-menu.png" alt="burger-menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="menu.html">MENU</a></li>
+            </ul>
+        </nav>
+
+        <div class="burger-menu-div" id="burger-id">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="menu.html">MENU</a></li>
+            </ul>
+        </div>
+    </div>
     <div class="menu">
         <div class="divPageTitle">
             <span class="accentText">MENI</span>
@@ -23,8 +41,13 @@
             <div class="foodsContainer">
                 <div class="product">
                     <h1>Cheesecake</h1>
-                    <p>200RSD</p>
+                    <p class="cena">200RSD</p>
                     <img src="img/cheesecake.png" alt="Cheesecake">
+                    <div class="qunatityContainer"> 
+                        <button class="decreaseBtn">-</button> 
+                        <span class="quantity">0</span>
+                        <button class="increaseBtn">+</button>
+                    </div>
                     <p id="cheesecake">
                         <button class="orderBtn">Order</button>
                     </p>
@@ -34,6 +57,11 @@
                     <h1>Blueberry Muffin</h1>
                     <p class="cena">200RSD</p>
                     <img src="img/muffin.png" alt="Blueberry Muffins">
+                    <div class="qunatityContainer"> 
+                        <button class="decreaseBtn">-</button> 
+                        <span class="quantity">0</span>
+                        <button class="increaseBtn">+</button>
+                    </div>
                     <p id="muffin"><button class="orderBtn">Order</button></p>
 
                 </div>
@@ -41,6 +69,11 @@
                     <h1>Croissants</h1>
                     <p class="cena">200RSD</p>
                     <img src="img/croissant.jpg" alt="Croissants">
+                    <div class="qunatityContainer"> 
+                        <button class="decreaseBtn">-</button> 
+                        <span class="quantity">0</span>
+                        <button class="increaseBtn">+</button>
+                    </div>
                     <p id="Croissant">
                         <button class="orderBtn">Order</button>
                     </p>
@@ -49,6 +82,11 @@
                     <h1>Lavacake</h1>
                     <p class="cena">1000RSD</p>
                     <img src="img/lavacake.png" alt="Lavacake">
+                    <div class="qunatityContainer"> 
+                        <button class="decreaseBtn">-</button> 
+                        <span class="quantity">0</span>
+                        <button class="increaseBtn">+</button>
+                    </div>
                     <p id="lavacake">
                         <button class="orderBtn">Order</button>
                     </p>
@@ -57,6 +95,11 @@
                     <h1>Ice cream</h1>
                     <p class="cena">1300RSD</p>
                     <img src="img/icecream.png" alt="Ice cream">
+                    <div class="qunatityContainer"> 
+                        <button class="decreaseBtn">-</button> 
+                        <span class="quantity">0</span>
+                        <button class="increaseBtn">+</button>
+                    </div>
                     <p id="ice_cream">
                         <button class="orderBtn">Order</button>
                     </p>
@@ -66,6 +109,11 @@
                     <h1>Lemonade</h1>
                     <p class="cena">200RSD</p>
                     <img src="img/lemonade.png" alt="Lemonade">
+                    <div class="qunatityContainer"> 
+                        <button class="decreaseBtn">-</button> 
+                        <span class="quantity">0</span>
+                        <button class="increaseBtn">+</button>
+                    </div>
                     <p id="lemonade">
                         <button class="orderBtn">Order</button>
                     </p>
@@ -75,6 +123,11 @@
                     <h1>Baklava</h1>
                     <p class="cena">299RSD</p>
                     <img src="img/baklava.png" alt="Baklava">
+                    <div class="qunatityContainer"> 
+                        <button class="decreaseBtn">-</button> 
+                        <span class="quantity">0</span>
+                        <button class="increaseBtn">+</button>
+                    </div>
                     <p id="baklava">
                         <button class="orderBtn">Order</button>
                     </p>
@@ -83,6 +136,11 @@
                     <h1>Capuccino</h1>
                     <p class="cena">459RSD</p>
                     <img src="img/cappucino.png" alt="Capuccino">
+                    <div class="qunatityContainer"> 
+                        <button class="decreaseBtn">-</button> 
+                        <span class="quantity">0</span>
+                        <button class="increaseBtn">+</button>
+                    </div>
                     <p id="Cappucino">
                         <button class="orderBtn">Order</button>
                     </p>
@@ -100,20 +158,19 @@
                             <input type="text" id="kontakt" size="50px" maxlength="20">
                         </div>
                     </div>
-    
+
                     <div class="order">
                         <p>Payement type:</p>
                         <input type="radio" name="placanje" id="kreditna">Credit card
                         <input type="radio" name="placanje" id="rate">Cash
                         <br>
-                        <textarea name="" id="myOrders" cols="100" rows="20"
-                            placeholder="Your Orders List"></textarea>
+                        <textarea name="" id="myOrders" cols="100" rows="20" placeholder="Your Orders List"></textarea>
                         <br>
                         <p id="parRacun">Your bill: </p>
                         <div class="buttons_container">
                             <button id="placeOrderBtn" class="commonBtn">Place an order</button>
                             <button id="deleteBtn" type="button" class="commonBtn">Delete order</button>
-                    </div>
+                        </div>
                     </div>
                 </form>
             </div>
@@ -125,6 +182,8 @@
                 <div class="data">Radno vreme: <br> 08:00-22:00</div>
             </div>
         </div>
+        <script src="menuscript.js"></script>
+        <script src="burgermenu.js"></script>
 </body>
 
 </html>

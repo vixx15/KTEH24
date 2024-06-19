@@ -37,6 +37,13 @@
     justify-content: center;
 }
 
+.qunatityContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin:5px 0px;
+}
+
 .line {
     margin-top: 15px;
     width: 30%;
@@ -59,12 +66,13 @@
     border-radius: 3px;
 }
 
-.orderBtn {
+.decreaseBtn, .increaseBtn, .orderBtn {
     cursor: pointer;
     border-radius: 3px;
     height: 30px;
-    width: 100px;
     position: relative;
+    padding:5px;
+    margin:0px 5px;
     top: -10px;
     border: 0px;
     background-color: #FADADD;
