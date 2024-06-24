@@ -153,6 +153,16 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function handleFormSubmit() {
+   const fullName = document.getElementById('ime_prezime').value;
+   const contact = document.getElementById('kontakt').value;
+   const paymentType = document.querySelector('input[name="placanje"]:checked').id;
+   const orders = document.getElementById('myOrders').value;
+
+   console.log('Full Name:', fullName);
+   console.log('Contact:', contact);
+   console.log('Payment Type:', paymentType);
+   console.log('Orders:', orders);
    
+   alert(`Order placed successfully for ${fullName}\nTotal: ${billAmount}\nPayment type: ${paymentType} RSD}!`);
 }
 
