@@ -6,7 +6,7 @@
 }
 
 .accentText{
-    font-weight: 700;
+    font-weight: 750;
     line-height: 50px;
     font-size: 72px;
 }
@@ -40,10 +40,11 @@
     color: #333333; 
     background-color: #FADADD; 
     font-size: 20px;
-    border-radius: 10px;
+    border-radius: 12px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     padding: 10px 20px; 
-    transition: background-color 0.3s ease; S
+    transition: background-color 0.3s ease;
 }
 
 .containerMain {
