@@ -142,3 +142,17 @@ Array.from(decreaseBtns).forEach(function (btn) {
       btn.parentNode.querySelector(".quantity").textContent = quantity + ""
    })
 })*/
+
+document.addEventListener('DOMContentLoaded', () => {
+   const form = document.getElementById('forma');
+
+   form.addEventListener('submit', function(event) {
+       event.preventDefault(); 
+       handleFormSubmit();
+   });
+});
+
+function handleFormSubmit() {
+   
+}
+
